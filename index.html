@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandra Tofield - Wedding Planner | Auckland, New Zealand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Transform your wedding planning from chaos to celebration. 30+ years of luxury event planning across New Zealand. Free consultation available.">
 </head>
@@ -13,6 +16,7 @@
             <nav class="nav">
                 <div class="nav-brand">
                     <h1 class="name">Alexandra Tofield</h1>
+                    <p class="tagline">Event Planning and Wedding by Alex</p>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -25,30 +29,13 @@
     </header>
 
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">Your Wedding Day Should Be About Celebrating, Not Problem-Solving</h1>
-                        <p class="hero-subtitle">After 30+ years planning weddings across New Zealand, Alexandra Tofield transforms chaotic planning into seamless celebrations. From intimate ceremonies to luxury events, she ensures your day runs perfectly while you focus on what matters most.</p>
-                        
-                        <div class="benefits-list">
-                            <div class="benefit-item">
-                                <span>Save 10-20% on total wedding costs</span>
-                            </div>
-                            <div class="benefit-item">
-                                <span>Stress-free planning with expert guidance</span>
-                            </div>
-                            <div class="benefit-item">
-                                <span>Day-of coordination you can trust</span>
-                            </div>
+        <!-- Hero Section with Full Background Image -->
+        <section class="hero-full">
+            <div class="hero-background">
+                <div class="hero-overlay">
+                    <div class="container">
+                        <div class="hero-content-full">
                         </div>
-                        
-                        <a href="contact.html" class="btn btn-primary btn-large">Book Free Consultation</a>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/Alex Picture.JPG" alt="Alexandra Tofield - Wedding Planner" class="profile-photo">
                     </div>
                 </div>
             </div>
@@ -79,6 +66,35 @@
             </div>
         </section>
 
+        <!-- Wedding Table Image Section -->
+        <section class="wedding-table-section">
+            <div class="container">
+                <div class="table-content">
+                    <div class="table-text">
+                        <h2 class="section-title">Creating Moments That Last Forever</h2>
+                        <p class="table-description">Every detail matters. From the perfect floral arrangements to the elegant table settings, I ensure your wedding day reflects your unique love story with sophistication and grace.</p>
+                        <div class="table-features">
+                            <div class="feature-item">
+                                <h3>Elegant Design</h3>
+                                <p>Meticulously crafted table settings and decor</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Perfect Coordination</h3>
+                                <p>Seamless vendor management and timeline execution</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Personal Touch</h3>
+                                <p>Every element reflects your personal style and vision</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-image">
+                        <img src="images/Table Picture.JPG" alt="Elegant wedding table setting with flowers and candles" class="wedding-table-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Independent Advantage -->
         <section class="independent-advantage">
             <div class="container">
@@ -86,19 +102,77 @@
                 <div class="advantage-grid">
                     <div class="advantage-item">
                         <span class="checkmark">✓</span>
-                        <span>Broader vendor selection (not limited to venue lists)</span>
+                        <span>Access to all vendors, not just venue preferred lists</span>
                     </div>
                     <div class="advantage-item">
                         <span class="checkmark">✓</span>
-                        <span>True cost negotiation (no commission bias)</span>
+                        <span>True cost negotiation without commission conflicts</span>
                     </div>
                     <div class="advantage-item">
                         <span class="checkmark">✓</span>
-                        <span>Loyalty to YOU, not the venue</span>
+                        <span>Loyalty to you, not the venue</span>
                     </div>
                     <div class="advantage-item">
                         <span class="checkmark">✓</span>
-                        <span>Flexibility for unique, non-traditional elements</span>
+                        <span>Freedom to create unique, personalized celebrations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding Couple Section -->
+        <section class="wedding-couple-section">
+            <div class="container">
+                <div class="couple-content">
+                    <div class="couple-image">
+                        <img src="images/Ring Picture.JPG" alt="Wedding rings symbolizing love and commitment" class="couple-photo">
+                    </div>
+                    <div class="couple-text">
+                        <h2 class="section-title">Celebrating Your Love Story</h2>
+                        <p class="couple-description">Your wedding day is about celebrating the love you share. I ensure every moment is filled with joy, laughter, and beautiful memories that will last a lifetime.</p>
+                        <div class="couple-features">
+                            <div class="feature-item">
+                                <h3>Unforgettable Moments</h3>
+                                <p>Creating magical moments that capture your unique love story</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Stress-Free Celebration</h3>
+                                <p>You focus on celebrating while I handle all the details</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Perfect Memories</h3>
+                                <p>Every detail crafted to create lasting memories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding Cake Section -->
+        <section class="wedding-cake-section">
+            <div class="container">
+                <div class="cake-content">
+                    <div class="cake-text">
+                        <h2 class="section-title">Every Detail Matters</h2>
+                        <p class="cake-description">From the perfect wedding cake to the smallest decorative touches, I ensure every element of your special day reflects your vision and creates the atmosphere you've always dreamed of.</p>
+                        <div class="cake-features">
+                            <div class="feature-item">
+                                <h3>Personalized Design</h3>
+                                <p>Every element tailored to your unique style and preferences</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Quality Vendors</h3>
+                                <p>Working with the best vendors to bring your vision to life</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Attention to Detail</h3>
+                                <p>No detail is too small when it comes to your perfect day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-image">
+                        <img src="images/Cake Picture.JPG" alt="Beautiful wedding cake with flowers" class="cake-photo">
                     </div>
                 </div>
             </div>
