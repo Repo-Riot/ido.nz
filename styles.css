@@ -1,3 +1,47 @@
+/* Font loading optimization */
+html {
+    font-display: swap;
+}
+
+html.fonts-loaded .nav-brand .name,
+html.fonts-loaded .nav-brand .tagline,
+html.fonts-loaded .section-title,
+html.fonts-loaded .page-title,
+html.fonts-loaded .hero-title-full,
+html.fonts-loaded .feature-item h3,
+html.fonts-loaded .trust-item h3,
+html.fonts-loaded .problem-title,
+html.fonts-loaded .difference-text h3,
+html.fonts-loaded .highlight-text,
+html.fonts-loaded .experience-item h3,
+html.fonts-loaded .approach-item h3,
+html.fonts-loaded .availability-item h3,
+html.fonts-loaded .contact-text h3,
+html.fonts-loaded .contact-content h3 {
+    opacity: 1;
+    transform: none;
+}
+
+.nav-brand .name,
+.nav-brand .tagline,
+.section-title,
+.page-title,
+.hero-title-full,
+.feature-item h3,
+.trust-item h3,
+.problem-title,
+.difference-text h3,
+.highlight-text,
+.experience-item h3,
+.approach-item h3,
+.availability-item h3,
+.contact-text h3,
+.contact-content h3 {
+    opacity: 0.8;
+    transform: translateY(1px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -10,6 +54,7 @@ body {
     line-height: 1.6;
     color: #2c3e50;
     background-color: #fefefe;
+    font-display: swap;
 }
 
 .container {
@@ -50,6 +95,7 @@ body {
     color: #2c3e50;
     font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
     margin-bottom: 0.2rem;
+    font-display: swap;
 }
 
 .nav-brand .tagline {
@@ -59,6 +105,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-display: swap;
 }
 
 .nav-menu {

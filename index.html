@@ -6,9 +6,24 @@
     <title>Alexandra Tofield - Wedding Planner | Auckland, New Zealand</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Transform your wedding planning from chaos to celebration. 30+ years of luxury event planning across New Zealand. Free consultation available.">
+    <script>
+        // Font loading optimization
+        if ('fonts' in document) {
+            Promise.all([
+                document.fonts.load('400 1rem Lato'),
+                document.fonts.load('600 1rem Lato'),
+                document.fonts.load('400 1.8rem Playfair Display'),
+                document.fonts.load('600 1.8rem Playfair Display'),
+                document.fonts.load('700 1.8rem Playfair Display')
+            ]).then(() => {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        }
+    </script>
 </head>
 <body>
     <header class="header">
