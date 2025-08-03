@@ -133,18 +133,9 @@ body {
 }
 
 .benefit-item {
-    display: flex;
-    align-items: center;
     margin-bottom: 1rem;
     font-size: 1.1rem;
     color: #495057;
-}
-
-.checkmark {
-    color: #28a745;
-    font-weight: bold;
-    margin-right: 0.75rem;
-    font-size: 1.2rem;
 }
 
 /* Buttons */
@@ -297,14 +288,7 @@ body {
 }
 
 .card-header {
-    display: flex;
-    align-items: center;
     margin-bottom: 1.5rem;
-}
-
-.problem-icon {
-    font-size: 2rem;
-    margin-right: 1rem;
 }
 
 .problem-title {
@@ -434,11 +418,6 @@ body {
     border: 1px solid #e9ecef;
 }
 
-.experience-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
 .experience-item h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -554,11 +533,6 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
-}
-
-.contact-icon {
-    font-size: 2rem;
-    margin-right: 1rem;
 }
 
 .contact-text h3 {
