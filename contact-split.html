@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I Do - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              DEFAULT: '#8AA197',
+              600: '#7a9188',
+              700: '#6e887e',
+            },
+            cream: '#FAF7F2',
+            ivory: '#FFFDF8',
+            ink: '#1E1E1E',
+            muted: '#4a4a4a',
+            ring: '#e9e2d7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="m-0 p-0 bg-cream text-ink font-sans">
+  <header class="bg-white border-b border-ring">
+    <div class="max-w-[1200px] mx-auto px-5 py-2.5 flex flex-col items-center">
+      <div class="brand">
+        <img src="images/logo-idoweddings.png" alt="I Do – Weddings & Events logo by Alex" class="h-[120px] w-auto my-1.5 mx-auto block" />
+      </div>
+      <nav aria-label="Primary" class="flex gap-6 flex-wrap justify-center py-2 pb-3">
+        <a href="index.html" class="text-ink no-underline border-b-2 border-transparent py-1.5 px-0.5 hover:border-sage">Home</a>
+        <a href="alex.html" class="text-ink no-underline border-b-2 border-transparent py-1.5 px-0.5 hover:border-sage">Alex</a>
+        <a href="services.html" class="text-ink no-underline border-b-2 border-transparent py-1.5 px-0.5 hover:border-sage">Services & Packages</a>
+        <a href="love-thanks.html" class="text-ink no-underline border-b-2 border-transparent py-1.5 px-0.5 hover:border-sage">Love & Thanks</a>
+        <a href="contact-split.html" class="text-ink no-underline border-b-2 border-transparent py-1.5 px-0.5 hover:border-sage">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-[1200px] mx-auto px-6 py-16">
+    <section class="grid gap-8 grid-cols-1 lg:grid-cols-2 items-start">
+      <aside class="bg-white border border-ring rounded-3xl p-10 shadow-sm">
+        <h1 class="text-[clamp(1.8rem,3vw,2.4rem)] mb-6 font-semibold leading-tight">Let's start planning something unforgettable.</h1>
+        <p class="text-muted leading-[1.8] mb-5 text-[1rem]">Every great celebration begins with a conversation - and I'd love to hear about yours. Whether you're newly engaged, knee-deep in ideas, or just starting to dream, I'm here to help bring it all to life.</p>
+        <p class="text-muted leading-[1.8] mb-8 text-[1rem]">Reach out directly - I'll be in touch soon to arrange a relaxed chat over coffee (or wine!).</p>
+
+        <div class="space-y-4 pt-6 border-t border-ring">
+          <div class="flex items-start gap-3">
+            <span class="text-xl mt-0.5">📍</span>
+            <p class="text-muted leading-relaxed">Based in Auckland - planning weddings across New Zealand</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl mt-0.5">📞</span>
+            <div>
+              <p class="text-muted mb-1">Alexandra Tofield</p>
+              <a href="tel:+64275278869" class="text-ink font-medium no-underline hover:text-sage transition-colors">+64 27 527 8869</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl mt-0.5">📧</span>
+            <a href="mailto:alextofield@me.com" class="text-ink font-medium no-underline hover:text-sage transition-colors break-all">alextofield@me.com</a>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl mt-0.5">💍</span>
+            <a href="https://www.instagram.com/idoweddings_nz" target="_blank" rel="noopener" class="text-ink font-medium no-underline hover:text-sage transition-colors">@idoweddings_nz</a>
+          </div>
+        </div>
+      </aside>
+
+      <section class="bg-white border border-ring rounded-3xl p-10 shadow-sm" role="complementary">
+        <h2 class="text-[1.6rem] mb-4 font-semibold">Get in Touch</h2>
+        <p class="text-muted leading-[1.8] mb-4 text-[1rem]">I'd love to hear about your plans and discuss how I can help make your day unforgettable. Feel free to reach out via phone, email, or Instagram - I respond to all enquiries personally and aim to get back to you within 24 hours.</p>
+        <p class="text-muted leading-[1.8] mb-8 text-[0.95rem] italic">No forms needed - just reach out directly.</p>
+
+        <div class="space-y-5">
+          <div class="bg-cream/40 border border-ring rounded-2xl p-6 hover:shadow-sm transition-shadow duration-300">
+            <h3 class="text-[1.15rem] font-semibold mb-3 text-ink">Call or Text</h3>
+            <a href="tel:+64275278869" class="text-sage text-[1.2rem] font-semibold hover:text-sage-700 transition-colors block mb-2">+64 27 527 8869</a>
+            <p class="text-[0.92rem] text-muted leading-relaxed">Available weekdays 9am-6pm, or by appointment</p>
+          </div>
+
+          <div class="bg-cream/40 border border-ring rounded-2xl p-6 hover:shadow-sm transition-shadow duration-300">
+            <h3 class="text-[1.15rem] font-semibold mb-3 text-ink">Email</h3>
+            <a href="mailto:alextofield@me.com" class="text-sage text-[1.2rem] font-semibold hover:text-sage-700 transition-colors break-all block mb-2">alextofield@me.com</a>
+            <p class="text-[0.92rem] text-muted leading-relaxed">I typically respond within a few hours during business days</p>
+          </div>
+
+          <div class="bg-cream/40 border border-ring rounded-2xl p-6 hover:shadow-sm transition-shadow duration-300">
+            <h3 class="text-[1.15rem] font-semibold mb-3 text-ink">Instagram</h3>
+            <a href="https://www.instagram.com/idoweddings_nz" target="_blank" rel="noopener" class="text-sage text-[1.2rem] font-semibold hover:text-sage-700 transition-colors block mb-2">@idoweddings_nz</a>
+            <p class="text-[0.92rem] text-muted leading-relaxed">Follow for wedding inspiration and behind-the-scenes moments</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="max-w-[900px] mx-auto mt-16 text-center text-ink" aria-label="Let's Chat">
+      <p class="font-semibold text-[1.05rem] mb-3">Ready to start planning? Let's chat.</p>
+      <p class="text-muted">
+        <a href="mailto:alextofield@me.com" class="text-ink hover:text-sage transition-colors">alextofield@me.com</a>
+        <span class="mx-3 text-ring">|</span>
+        <a href="tel:+64275278869" class="text-ink hover:text-sage transition-colors">+64 27 527 8869</a>
+        <span class="mx-3 text-ring">|</span>
+        <a href="https://www.instagram.com/idoweddings_nz" target="_blank" rel="noopener" class="text-ink hover:text-sage transition-colors">@idoweddings_nz</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,120 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Do Wedding & Event Planning - Weddings with Heart (and a Plan)</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Weddings with Heart (and a Plan). I believe in planning with purpose, heart, and a sense of humour. Let's make it beautiful, meaningful, and ensure you enjoy every minute.">
-    <script>
-        // Font loading optimization
-        if ('fonts' in document) {
-            Promise.all([
-                document.fonts.load('400 1rem Lato'),
-                document.fonts.load('600 1rem Lato'),
-                document.fonts.load('400 1.8rem Playfair Display'),
-                document.fonts.load('600 1.8rem Playfair Display'),
-                document.fonts.load('700 1.8rem Playfair Display')
-            ]).then(() => {
-                document.documentElement.classList.add('fonts-loaded');
-            });
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I Do - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              DEFAULT: '#8AA197',
+              600: '#7a9188',
+              700: '#6e887e',
+            },
+            cream: '#FAF7F2',
+            ink: '#1E1E1E',
+            muted: '#4a4a4a',
+            ring: '#e9e2d7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+          },
         }
-    </script>
+      }
+    }
+  </script>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="nav-brand">
-                    <h1 class="name">IDO Wedding & Event Planning</h1>
-                    <p class="tagline">Services and Packages</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services and Packages</a></li>
-                    <li><a href="testimonials.html" class="nav-link">Love & Thanks</a></li>
-                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="m-0 p-0 font-sans text-ink bg-cream">
+  <header class="sticky top-0 z-10 bg-white border-b border-ring" role="banner">
+    <div class="max-w-[1200px] mx-auto px-5 py-2.5 flex flex-col items-center">
+      <div class="brand">
+        <img src="images/logo-idoweddings.png" alt="I Do – Weddings & Events logo by Alex" class="h-[120px] w-auto my-1.5 mx-auto block" />
+      </div>
+      <nav aria-label="Primary" class="flex gap-6 flex-wrap justify-center py-2 pb-3">
+        <a href="index.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Home</a>
+        <a href="alex.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Alex</a>
+        <a href="services.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Services & Packages</a>
+        <a href="love-thanks.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Love & Thanks</a>
+        <a href="contact-split.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="main">
-        <!-- Hero Section with Full Background Image -->
-        <section class="hero-full">
-            <div class="hero-background">
-                <div class="hero-overlay">
-                    <div class="container">
-                        <div class="hero-content-full">
-                            <h1 class="hero-title-full">Weddings with Heart</h1>
-                            <p class="hero-subtitle-full">I believe in planning with purpose, heart, and a sense of humour.</p>
-                            <p class="hero-description">Your wedding should reflect who you are — not just as a couple, but as individuals your quirks, your dreams, surrounded by the loved ones you want to celebrate with.</p>
-                            <p class="hero-description">My job is to create a day that honours all of that, with seamless planning, a calm presence, and support that feels more like a trusted friend than a clipboard-wielding stranger. Let's make it beautiful. Let's make it meaningful. And let's make sure you get to enjoy every minute.</p>
-                            <a href="contact.html" class="btn btn-primary btn-large">Let's Start Planning</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="relative overflow-hidden bg-white border-b border-ring" aria-label="Featured Photos">
+    <div class="flex transition-transform duration-[600ms] ease-in-out" id="track">
+      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
+        <img src="images/hero1.jpg" alt="Featured wedding image 1" class="w-full h-full object-cover block"/>
+      </div>
+      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
+        <img src="images/hero2.jpg" alt="Featured wedding image 2" class="w-full h-full object-cover block"/>
+      </div>
+      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
+        <img src="images/hero3.jpg" alt="Featured wedding image 3" class="w-full h-full object-cover block"/>
+      </div>
+      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
+        <img src="images/hero4.jpg" alt="Featured wedding image 4" class="w-full h-full object-cover block"/>
+      </div>
+    </div>
+    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5" id="dots" aria-hidden="true">
+      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20 active"></div>
+      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
+      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
+      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
+    </div>
+  </section>
 
-        <!-- Meet Alex Section -->
-        <section class="meet-alex-section">
-            <div class="container">
-                <div class="alex-content">
-                    <div class="alex-text">
-                        <h2 class="section-title">Meet Alex</h2>
-                        <h3 class="alex-subtitle">Founder & Creative Force Behind I Do Wedding & Event Planning</h3>
-                        <h4 class="alex-tagline">Your Calm in the Chaos</h4>
-                        <p class="alex-intro">Hi, I'm Alex — the planner, cheerleader, spreadsheet-slayer, and romantic heart behind I Do Wedding & Event Planning.</p>
-                        <p class="alex-story">I've been in the world of events for over two decades, and honestly, I still get goosebumps during the vows. There's something so powerful about helping people celebrate their love — not just in a "that was pretty" kind of way, but in a "that felt exactly like us" kind of way.</p>
-                        <p class="alex-story">What started as a passion for organisation, colour palettes and styling has grown into something so much more. I help couples stay calm, feel confident, and actually enjoy the process — not just survive it. Whether we're planning a cosy elopement, a big party with all your favourites, or something beautifully in-between, my role stays the same: support you, guide you, and handle the details so you don't have to.</p>
-                        <p class="alex-story">Why do I do this? Because I believe your wedding should feel like home — joyful, meaningful, and full of the people (and snacks) you love. And because watching your day come together — knowing I helped make it happen — fills my cup every time.</p>
-                    </div>
-                    <div class="alex-image">
-                        <img src="images/Alex Picture.JPG" alt="Alex - Founder of I Do Wedding & Event Planning" class="alex-photo">
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main class="max-w-[1100px] mx-auto px-6 py-12 text-center">
+    <h1 class="text-[clamp(2rem,3.5vw,2.8rem)] font-semibold m-0 mb-6 leading-tight">From "Yes" to "I Do"… we bring your vision to life.</h1>
+    <p class="max-w-[860px] mx-auto mb-5 text-[1rem] leading-[1.8] text-muted">Your wedding should feel like you - your story, your style, and surrounded by the people who matter most. Every detail thoughtfully considered, every moment filled with meaning and joy.</p>
+    <p class="max-w-[860px] mx-auto mb-8 text-[1rem] leading-[1.8] text-muted">With calm guidance, expert planning, and a personal connection at the heart of every decision, we'll create a celebration that is beautiful, intentional, and entirely yours - and ensure you get to savour every second.</p>
 
-        <!-- Philosophy Section -->
-        <section class="philosophy-section">
-            <div class="container">
-                <h2 class="section-title">My Philosophy</h2>
-                <div class="philosophy-content">
-                    <p class="philosophy-intro">I believe weddings aren't about perfection — they're about connection.</p>
-                    <p class="philosophy-text">The most beautiful celebrations aren't the ones that follow every trend or run without a single hiccup. They're the ones where the couple is fully present, the guests feel truly looked after, and love is the loudest thing in the room.</p>
-                    <p class="philosophy-text">That's the kind of day I want for you.</p>
-                    <p class="philosophy-text">I plan with purpose, heart, and a sense of humour — helping you filter out the noise, honour your quirks and dreams, and create a wedding that feels genuinely like you. Whether it's grand and glamorous or intimate and understated, my job is to make everything run smoothly behind the scenes so you can focus on the moments that matter.</p>
-                    <p class="philosophy-text">Together, we'll create a day that looks beautiful, feels effortless, and celebrates everything you are — and I'll be there through it all, calm, capable, and clipboard in hand.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="mt-8 flex gap-4 justify-center flex-wrap">
+      <a class="inline-block bg-sage text-white border-none py-3 px-6 rounded-full font-semibold cursor-pointer hover:bg-sage-700 transition-colors duration-300" href="services.html">Explore Packages</a>
+      <a class="inline-block bg-transparent text-ink border-2 border-sage py-3 px-6 rounded-full font-semibold cursor-pointer hover:bg-sage hover:text-white transition-colors duration-300" href="contact-split.html">Contact Alex</a>
+    </div>
 
-    <!-- Contact Bar -->
-    <section class="contact-bar">
-        <div class="container">
-            <div class="contact-content">
-                <h3>Ready to start planning?</h3>
-                <div class="contact-info">
-                    <a href="tel:+64275278869" class="contact-link">+64 27 527 8869</a>
-                    <span class="contact-separator">|</span>
-                    <a href="mailto:alextofield@me.com" class="contact-link">alextofield@me.com</a>
-                </div>
-            </div>
-        </div>
+    <section class="max-w-[1000px] mx-auto mt-12 bg-white border border-ring rounded-2xl p-8 shadow-sm" aria-label="Featured Testimonial">
+      <blockquote class="m-0 text-[0.98rem] leading-[1.8] text-muted mb-5">
+        "Our wedding day was everything we dreamed of and more. Alex was incredible - calm, organised, and completely in control, while making it all feel effortless. We felt so supported and could truly enjoy every moment."
+      </blockquote>
+      <div class="border-t border-ring pt-4 mb-6">
+        <div class="font-semibold text-ink text-[1.05rem]">Rebekah & Samuel</div>
+      </div>
+      <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+        <img src="images/testimonial1.jpg" alt="Rebekah & Samuel testimonial photo 1" class="w-full h-[380px] object-cover rounded-xl border border-ring bg-gray-100">
+        <img src="images/testimonial2.jpg" alt="Rebekah & Samuel testimonial photo 2" class="w-full h-[380px] object-cover rounded-xl border border-ring bg-gray-100">
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 IDO Wedding & Event Planning. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="my-12 mx-auto max-w-[900px] py-5 px-6 bg-white border border-ring rounded-2xl text-muted shadow-sm">
+      <p class="text-[1rem] leading-relaxed m-0"><strong class="text-ink">From "Yes" to "I Do", we bring your vision to life - beautifully, intentionally, and entirely yours.</strong></p>
+    </div>
+
+    <section class="max-w-[900px] mx-auto mt-12 text-center text-ink" aria-label="Let's Chat">
+      <p class="font-semibold text-[1.05rem] mb-3">Ready to start planning? Let's chat.</p>
+      <p class="text-muted">
+        <a href="mailto:alextofield@me.com" class="text-ink hover:text-sage transition-colors">alextofield@me.com</a>
+        <span class="mx-3 text-ring">|</span>
+        <a href="tel:+64275278869" class="text-ink hover:text-sage transition-colors">+64 27 527 8869</a>
+        <span class="mx-3 text-ring">|</span>
+        <a href="https://www.instagram.com/idoweddings_nz" target="_blank" rel="noopener" class="text-ink hover:text-sage transition-colors">@idoweddings_nz</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="mt-7 py-5.5 px-5 border-t border-ring text-center text-muted">
+    <div>© I Do - Weddings & Events • designed & curated by Alex</div>
+  </footer>
+
+  <script>
+    const track = document.getElementById('track');
+    const dots = Array.from(document.getElementById('dots').children);
+    let index = 0;
+    function go(i){
+      index = (i + 4) % 4;
+      track.style.transform = `translateX(-${index*100}%)`;
+      dots.forEach((d,di)=>d.classList.toggle('active', di===index));
+      if (di===index) {
+        d.classList.remove('bg-white/70');
+        d.classList.add('bg-sage');
+      } else {
+        d.classList.add('bg-white/70');
+        d.classList.remove('bg-sage');
+      }
+    }
+    setInterval(()=>go(index+1), 4000);
+  </script>
 </body>
-</html> 
+</html>
