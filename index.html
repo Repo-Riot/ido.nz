@@ -128,15 +128,15 @@
         <img src="images/logo-idoweddings.png"
              alt="I Do Weddings, wedding planning with Alexandra Tofield, Matakana"
              width="300" height="110"
-             class="h-[70px] sm:h-[100px] w-auto mx-auto block" />
+             class="h-[52px] sm:h-[100px] w-auto mx-auto block" />
       </a>
-      <nav aria-label="Primary" class="flex gap-4 sm:gap-6 flex-wrap justify-center items-center pt-1 text-[0.95rem]">
+      <nav aria-label="Primary" class="flex gap-3 sm:gap-6 flex-wrap justify-center items-center pt-1 text-[0.82rem] sm:text-[0.95rem]">
         <a href="#about"    class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">About</a>
         <a href="#services" class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Services</a>
         <a href="#stories"  class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Love &amp; Thanks</a>
         <a href="#contact"  class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Contact</a>
         <a href="#book" data-booking
-           class="inline-block bg-sage text-white no-underline py-2 px-4 rounded-full font-semibold hover:bg-sage-700 transition-colors">Book a call</a>
+           class="hidden sm:inline-block bg-sage text-white no-underline py-2 px-4 rounded-full font-semibold hover:bg-sage-700 transition-colors">Book a call</a>
       </nav>
     </div>
   </header>
@@ -160,13 +160,13 @@
         </div>
       </div>
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent pointer-events-none"></div>
 
-      <div class="absolute inset-x-0 bottom-0 pb-10 px-6 text-center pointer-events-none">
-        <p class="text-white/95 text-[0.95rem] tracking-[0.2em] uppercase mb-3 drop-shadow">Matakana &middot; Auckland &middot; New Zealand</p>
+      <div class="absolute inset-x-0 bottom-0 pb-8 sm:pb-10 px-4 sm:px-6 text-center pointer-events-none">
+        <p class="text-white/95 text-[0.62rem] sm:text-[0.95rem] tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-3 drop-shadow-lg whitespace-nowrap">Matakana &middot; Auckland &middot; New Zealand</p>
         <div class="flex gap-3 justify-center flex-wrap pointer-events-auto">
-          <a href="#book" data-booking class="inline-block bg-white text-ink no-underline py-3 px-6 rounded-full font-semibold hover:bg-cream transition-colors shadow">Book a free intro call</a>
-          <a href="#services" class="inline-block bg-transparent text-white border-2 border-white no-underline py-3 px-6 rounded-full font-semibold hover:bg-white hover:text-ink transition-colors">See packages &amp; pricing</a>
+          <a href="#book" data-booking class="inline-block bg-white text-ink no-underline py-2.5 px-5 sm:py-3 sm:px-6 text-[0.9rem] sm:text-base rounded-full font-semibold hover:bg-cream transition-colors shadow">Book a free intro call</a>
+          <a href="#services" class="inline-block bg-transparent text-white border-2 border-white no-underline py-2.5 px-5 sm:py-3 sm:px-6 text-[0.9rem] sm:text-base rounded-full font-semibold hover:bg-white hover:text-ink transition-colors">See packages &amp; pricing</a>
         </div>
       </div>
 
@@ -202,7 +202,7 @@
     </section>
 
     <!-- ============ ABOUT ============ -->
-    <section id="about" class="scroll-mt-[170px] bg-white border-y border-ring">
+    <section id="about" class="scroll-mt-[105px] sm:scroll-mt-[170px] bg-white border-y border-ring">
       <div class="max-w-[1100px] mx-auto px-6 py-16">
         <div class="grid gap-10 lg:grid-cols-[380px_1fr] items-start">
           <div>
@@ -224,7 +224,7 @@
     </section>
 
     <!-- ============ SERVICES ============ -->
-    <section id="services" class="scroll-mt-[170px]">
+    <section id="services" class="scroll-mt-[105px] sm:scroll-mt-[170px]">
       <div class="max-w-[1100px] mx-auto px-6 py-16">
         <div class="text-center mb-12">
           <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Services &amp; packages</h2>
@@ -318,7 +318,7 @@
     </section>
 
     <!-- ============ TESTIMONIALS ============ -->
-    <section id="stories" class="scroll-mt-[170px] bg-white border-y border-ring">
+    <section id="stories" class="scroll-mt-[105px] sm:scroll-mt-[170px] bg-white border-y border-ring">
       <div class="max-w-[1100px] mx-auto px-6 py-16">
         <div class="text-center mb-12">
           <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Love &amp; thanks</h2>
@@ -362,7 +362,7 @@
     </section>
 
     <!-- ============ BOOKING ============ -->
-    <section id="book" class="scroll-mt-[170px]">
+    <section id="book" class="scroll-mt-[105px] sm:scroll-mt-[170px]">
       <div class="max-w-[900px] mx-auto px-6 py-16 text-center">
         <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Book a free intro call</h2>
         <div id="booking-live" style="display:none">
@@ -386,7 +386,7 @@
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section id="contact" class="scroll-mt-[170px] bg-white border-t border-ring">
+    <section id="contact" class="scroll-mt-[105px] sm:scroll-mt-[170px] bg-white border-t border-ring">
       <div class="max-w-[1100px] mx-auto px-6 py-16">
         <div class="grid gap-10 lg:grid-cols-2 items-start">
 
