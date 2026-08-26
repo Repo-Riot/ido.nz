@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>I Do - Home</title>
+
+  <title>Wedding Planner Matakana &amp; Auckland | I Do Weddings &ndash; Alexandra Tofield</title>
+  <meta name="description" content="Independent wedding planner and on-the-day coordinator based in Matakana, planning weddings across Auckland and New Zealand. Full planning from $7,000, on-the-day coordination from $2,200. Book a free intro call with Alexandra Tofield." />
+  <link rel="canonical" href="https://idoweddings.nz/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Alexandra Tofield" />
+  <meta name="geo.region" content="NZ-AUK" />
+  <meta name="geo.placename" content="Matakana, Auckland" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="I Do Weddings" />
+  <meta property="og:title" content="Wedding Planner Matakana &amp; Auckland | I Do Weddings" />
+  <meta property="og:description" content="Independent wedding planning and on-the-day coordination across Matakana, Auckland and New Zealand, with Alexandra Tofield." />
+  <meta property="og:url" content="https://idoweddings.nz/" />
+  <meta property="og:image" content="https://idoweddings.nz/images/hero1.jpg" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wedding Planner Matakana &amp; Auckland | I Do Weddings" />
+  <meta name="twitter:description" content="Independent wedding planning and on-the-day coordination across Matakana, Auckland and New Zealand." />
+  <meta name="twitter:image" content="https://idoweddings.nz/images/hero1.jpg" />
+
+  <link rel="icon" href="images/logo-idoweddings.png" />
+  <link rel="preload" as="image" href="images/hero1.jpg" fetchpriority="high" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            sage: {
-              DEFAULT: '#6B8A7A',
-              600: '#5A7A68',
-              700: '#4A6A58',
-            },
+            sage: { DEFAULT: '#6B8A7A', 600: '#5A7A68', 700: '#4A6A58' },
             cream: '#FAF7F2',
+            ivory: '#FFFDF8',
             ink: '#1E1E1E',
             muted: '#4a4a4a',
             ring: '#e9e2d7',
@@ -27,109 +47,536 @@
       }
     }
   </script>
+
+  <!-- ==========================================================
+       SITE SETTINGS - the only two lines you ever need to edit
+       ==========================================================
+       BOOKING_URL: paste the Google Calendar booking page link
+                    for alexidoweddings@gmail.com here.
+                    It looks like: https://calendar.app.google/xxxxxxxx
+                    While it is empty, every "Book" button quietly
+                    sends people to the enquiry form instead.
+
+       FORM_ENDPOINT: optional. Leave empty and the contact form
+                    opens Alex's email with the message pre-filled.
+                    Paste a Formspree endpoint to have submissions
+                    emailed automatically instead.
+  -->
+  <script>
+    window.IDO_CONFIG = {
+      BOOKING_URL: "",
+      FORM_ENDPOINT: "",
+      EMAIL: "alexidoweddings@gmail.com"
+    };
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://idoweddings.nz/#business",
+    "name": "I Do Weddings",
+    "alternateName": "I Do Wedding & Event Planning",
+    "description": "Independent wedding planner and on-the-day coordinator based in Matakana, planning weddings across Auckland and New Zealand.",
+    "url": "https://idoweddings.nz/",
+    "email": "alexidoweddings@gmail.com",
+    "telephone": "+64275278869",
+    "image": "https://idoweddings.nz/images/hero1.jpg",
+    "logo": "https://idoweddings.nz/images/logo-idoweddings.png",
+    "priceRange": "$200 - $7000+",
+    "currenciesAccepted": "NZD",
+    "founder": {
+      "@type": "Person",
+      "name": "Alexandra Tofield",
+      "jobTitle": "Wedding Planner and Event Coordinator"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Matakana",
+      "addressRegion": "Auckland",
+      "addressCountry": "NZ"
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "Matakana" },
+      { "@type": "Place", "name": "Warkworth" },
+      { "@type": "Place", "name": "Auckland" },
+      { "@type": "Place", "name": "Northland" },
+      { "@type": "Country", "name": "New Zealand" }
+    ],
+    "sameAs": [ "https://www.instagram.com/idoweddings_matakana" ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Wedding planning services",
+      "itemListElement": [
+        { "@type": "Offer", "priceCurrency": "NZD", "price": "7000", "itemOffered": { "@type": "Service", "name": "Full Planning & Day-of Coordination" } },
+        { "@type": "Offer", "priceCurrency": "NZD", "price": "4000", "itemOffered": { "@type": "Service", "name": "Custom Packages & Partial Planning" } },
+        { "@type": "Offer", "priceCurrency": "NZD", "price": "2200", "itemOffered": { "@type": "Service", "name": "On-the-Day Coordination" } },
+        { "@type": "Offer", "priceCurrency": "NZD", "price": "200", "itemOffered": { "@type": "Service", "name": "Personal Consultation" } }
+      ]
+    }
+  }
+  </script>
 </head>
+
 <body class="m-0 p-0 font-sans text-ink bg-cream">
-  <header class="sticky top-0 z-10 bg-white border-b border-ring" role="banner">
-    <div class="max-w-[1200px] mx-auto px-5 py-1 flex flex-col items-center">
-      <div class="brand">
-        <img src="images/logo-idoweddings.png" alt="I Do – Weddings & Events logo by Alex" class="h-[200px] w-auto my-0.5 mx-auto block" />
-      </div>
-      <nav aria-label="Primary" class="flex gap-6 flex-wrap justify-center py-1 pb-1">
-        <a href="index.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Home</a>
-        <a href="alex.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">About</a>
-        <a href="services.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Services</a>
-        <a href="love-thanks.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Love & Thanks</a>
-        <a href="contact-split.html" class="text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Contact</a>
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded-full focus:border focus:border-sage">Skip to content</a>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-ring" role="banner">
+    <div class="max-w-[1200px] mx-auto px-5 py-2 flex flex-col items-center">
+      <a href="#top" class="block">
+        <img src="images/logo-idoweddings.png"
+             alt="I Do Weddings, wedding planning with Alexandra Tofield, Matakana"
+             width="300" height="110"
+             class="h-[70px] sm:h-[100px] w-auto mx-auto block" />
+      </a>
+      <nav aria-label="Primary" class="flex gap-4 sm:gap-6 flex-wrap justify-center items-center pt-1 text-[0.95rem]">
+        <a href="#about"    class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">About</a>
+        <a href="#services" class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Services</a>
+        <a href="#stories"  class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Love &amp; Thanks</a>
+        <a href="#contact"  class="nav-link text-ink no-underline py-1.5 px-0.5 border-b-2 border-transparent font-medium hover:border-sage">Contact</a>
+        <a href="#book" data-booking
+           class="inline-block bg-sage text-white no-underline py-2 px-4 rounded-full font-semibold hover:bg-sage-700 transition-colors">Book a call</a>
       </nav>
     </div>
   </header>
 
-  <section class="relative overflow-hidden bg-white border-b border-ring" aria-label="Featured Photos">
-    <div class="flex transition-transform duration-[600ms] ease-in-out" id="track">
-      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
-        <img src="images/hero1.jpg" alt="Featured wedding image 1" class="w-full h-full object-cover block"/>
-      </div>
-      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
-        <img src="images/hero2.jpg" alt="Featured wedding image 2" class="w-full h-full object-cover block"/>
-      </div>
-      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
-        <img src="images/hero3.jpg" alt="Featured wedding image 3" class="w-full h-full object-cover block"/>
-      </div>
-      <div class="min-w-full h-[52vh] max-h-[560px] bg-gray-300 flex items-center justify-center">
-        <img src="images/hero4.jpg" alt="Featured wedding image 4" class="w-full h-full object-cover block"/>
-      </div>
-    </div>
-    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5" id="dots" aria-hidden="true">
-      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20 active"></div>
-      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
-      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
-      <div class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-black/20"></div>
-    </div>
-  </section>
+  <main id="main">
 
-  <main class="max-w-[1100px] mx-auto px-6 py-12 text-center">
-    <h1 class="text-[clamp(2rem,3.5vw,2.8rem)] font-semibold m-0 mb-6 leading-tight">From "Yes" to "I Do"… turning your dream into your reality.</h1>
-    <p class="max-w-[860px] mx-auto mb-5 text-[1rem] leading-[1.8] text-muted">Your wedding should feel like you - your story, your style, and surrounded by the people who matter most. Every detail thoughtfully considered, every moment filled with meaning and joy.</p>
-    <p class="max-w-[860px] mx-auto mb-8 text-[1rem] leading-[1.8] text-muted">With calm guidance, expert planning, and a personal connection at the heart of every decision, we'll create a celebration that is beautiful, intentional, and entirely yours - and ensure you get to savour every second.</p>
-
-    <div class="mt-8 flex gap-4 justify-center flex-wrap">
-      <a class="inline-block bg-sage text-white border-none py-3 px-6 rounded-full font-semibold cursor-pointer hover:bg-sage-700 transition-colors duration-300" href="services.html">Explore Packages</a>
-      <a class="inline-block bg-transparent text-ink border-2 border-sage py-3 px-6 rounded-full font-semibold cursor-pointer hover:bg-sage hover:text-white transition-colors duration-300" href="contact-split.html">Contact Alex</a>
-    </div>
-
-    <section class="max-w-[1000px] mx-auto mt-12 bg-white border border-ring rounded-2xl p-8 shadow-sm" aria-label="Featured Testimonial">
-      <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-6 items-center">
-        <div class="w-full">
-          <img src="images/testimonial1.jpg" alt="Rebekah & Samuel testimonial photo" class="w-full h-auto object-cover rounded-xl border border-ring bg-gray-100">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="relative overflow-hidden bg-white border-b border-ring" aria-label="Featured weddings">
+      <div class="flex transition-transform duration-[700ms] ease-in-out" id="track">
+        <div class="min-w-full h-[56vh] max-h-[600px]">
+          <img src="images/hero1.jpg" alt="Wedding reception styled by I Do Weddings in Matakana, Auckland" class="w-full h-full object-cover block" width="2000" height="1334" fetchpriority="high" />
         </div>
-        <div class="flex flex-col justify-center">
-          <blockquote class="m-0 text-[0.98rem] leading-[1.8] text-muted mb-5">
-            "We had the most beautiful wedding, thanks to Alex, from the very beginning, she made the journey so effortless for us. Especially as we only gave ourselves four months to pull it all together! No request was deemed impossible, and every little detail was considered a top priority to her. I wish we could relive it all over again! Thank you so much, Alex; you're an absolute dream! xx"
-          </blockquote>
-          <div class="border-t border-ring pt-4">
-            <div class="font-semibold text-ink text-[1.05rem]">Rebekah & Samuel</div>
+        <div class="min-w-full h-[56vh] max-h-[600px]">
+          <img src="images/hero2.jpg" alt="Bride and groom on their wedding day, planned by Alexandra Tofield" class="w-full h-full object-cover block" width="2000" height="1333" loading="lazy" />
+        </div>
+        <div class="min-w-full h-[56vh] max-h-[600px]">
+          <img src="images/hero3.jpg" alt="Outdoor wedding ceremony set up by I Do Weddings" class="w-full h-full object-cover block" width="2000" height="1333" loading="lazy" />
+        </div>
+        <div class="min-w-full h-[56vh] max-h-[600px]">
+          <img src="images/hero4.jpg" alt="Wedding table styling detail by I Do Weddings" class="w-full h-full object-cover block" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none"></div>
+
+      <div class="absolute inset-x-0 bottom-0 pb-10 px-6 text-center pointer-events-none">
+        <p class="text-white/95 text-[0.95rem] tracking-[0.2em] uppercase mb-3 drop-shadow">Matakana &middot; Auckland &middot; New Zealand</p>
+        <div class="flex gap-3 justify-center flex-wrap pointer-events-auto">
+          <a href="#book" data-booking class="inline-block bg-white text-ink no-underline py-3 px-6 rounded-full font-semibold hover:bg-cream transition-colors shadow">Book a free intro call</a>
+          <a href="#services" class="inline-block bg-transparent text-white border-2 border-white no-underline py-3 px-6 rounded-full font-semibold hover:bg-white hover:text-ink transition-colors">See packages &amp; pricing</a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10" id="dots" aria-hidden="true">
+        <button class="dot w-2.5 h-2.5 rounded-full bg-sage border border-white/60"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-white/60"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-white/60"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/70 border border-white/60"></button>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="max-w-[1100px] mx-auto px-6 pt-14 pb-10 text-center">
+      <h1 class="text-[clamp(2rem,3.5vw,2.8rem)] font-semibold m-0 mb-3 leading-tight">From &ldquo;Yes&rdquo; to &ldquo;I Do&rdquo;&hellip; turning your dream into your reality.</h1>
+      <p class="text-sage font-semibold tracking-wide mb-6">Independent wedding planning &amp; on-the-day coordination</p>
+      <p class="max-w-[860px] mx-auto mb-5 text-[1rem] leading-[1.8] text-muted">Your wedding should feel like you, your story, your style, and surrounded by the people who matter most. Every detail thoughtfully considered, every moment filled with meaning and joy.</p>
+      <p class="max-w-[860px] mx-auto mb-0 text-[1rem] leading-[1.8] text-muted">With calm guidance, expert planning, and a personal connection at the heart of every decision, we&rsquo;ll create a celebration that is beautiful, intentional, and entirely yours, and ensure you get to savour every second.</p>
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-3 max-w-[820px] mx-auto text-left">
+        <div class="bg-white border border-ring rounded-2xl p-5">
+          <p class="font-semibold text-ink mb-1">30+ years in events</p>
+          <p class="text-muted text-[0.92rem] leading-relaxed">Boutique weddings, galas, and high-profile functions.</p>
+        </div>
+        <div class="bg-white border border-ring rounded-2xl p-5">
+          <p class="font-semibold text-ink mb-1">Independent, not venue-tied</p>
+          <p class="text-muted text-[0.92rem] leading-relaxed">Loyal to you, with a broader supplier pool and no commission bias.</p>
+        </div>
+        <div class="bg-white border border-ring rounded-2xl p-5">
+          <p class="font-semibold text-ink mb-1">Any budget, same care</p>
+          <p class="text-muted text-[0.92rem] leading-relaxed">Whether you are spending $6,000 or $60,000.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="scroll-mt-[170px] bg-white border-y border-ring">
+      <div class="max-w-[1100px] mx-auto px-6 py-16">
+        <div class="grid gap-10 lg:grid-cols-[380px_1fr] items-start">
+          <div>
+            <img src="images/Alex Picture.JPG"
+                 alt="Alexandra Tofield, wedding planner and founder of I Do Weddings"
+                 class="w-full h-auto rounded-3xl object-cover shadow-md border border-ring"
+                 width="1200" height="801" loading="lazy" />
+          </div>
+          <div>
+            <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-5">Meet Alex</h2>
+            <p class="text-[1rem] leading-[1.8] text-muted mb-4">Hi, I&rsquo;m Alex, the planner, cheerleader, spreadsheet-slayer, and romantic heart behind I Do Wedding &amp; Event Planning.</p>
+            <p class="text-[1rem] leading-[1.8] text-muted mb-4">With over two decades in the world of events, I&rsquo;ve learned that the true magic of a wedding isn&rsquo;t just in how it looks, it&rsquo;s in how it feels. My love of organisation, design, and detail has grown into something far more meaningful: helping couples create celebrations that feel effortless, personal, and completely their own.</p>
+            <p class="text-[1rem] leading-[1.8] text-muted mb-4">As an independent planner and coordinator, I work closely with you to shape a day that reflects who you are, what you love, and how you want to celebrate. My role is to be your calm in the chaos, whether you&rsquo;re planning an intimate elopement, a grand celebration, or something beautifully in between.</p>
+            <p class="text-[1rem] leading-[1.8] text-muted mb-6">Because your wedding should be a true reflection of you: thoughtful, meaningful, and full of heart.</p>
+            <a href="alex.html" class="text-sage font-semibold no-underline hover:text-sage-700">Read Alex&rsquo;s full story &rarr;</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="my-12 mx-auto max-w-[900px] py-5 px-6 bg-white border border-ring rounded-2xl text-muted shadow-sm">
-      <p class="text-[1rem] leading-relaxed m-0"><strong class="text-ink">From "Yes" to "I Do", turning your dream into your reality - beautifully, intentionally, and entirely yours.</strong></p>
-    </div>
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="scroll-mt-[170px]">
+      <div class="max-w-[1100px] mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Services &amp; packages</h2>
+          <p class="text-muted text-[1.02rem] max-w-[800px] mx-auto leading-[1.8]">Thoughtfully tailored wedding planning, delivered with calm confidence. Each option can be customised to suit your vision, your budget, and how much support you want.</p>
+        </div>
 
-    <section class="max-w-[900px] mx-auto mt-12 text-center text-ink" aria-label="Let's Chat">
-      <p class="font-semibold text-[1.05rem] mb-3">Ready to start planning? Let's talk!</p>
-      <p class="text-muted">
-        <a href="mailto:alextofield@me.com" class="text-ink hover:text-sage transition-colors">alextofield@me.com</a>
-        <span class="mx-3 text-ring">|</span>
-        <a href="tel:+64275278869" class="text-ink hover:text-sage transition-colors">+64 27 527 8869</a>
-        <span class="mx-3 text-ring">|</span>
-        <a href="https://www.instagram.com/idoweddings_nz" target="_blank" rel="noopener" class="text-ink hover:text-sage transition-colors">@idoweddings_nz</a>
-      </p>
+        <div class="grid gap-6 md:grid-cols-2">
+
+          <article class="bg-white border border-ring rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <img src="images/fu-service.jpeg" alt="Full wedding planning and day-of coordination" class="w-full h-[200px] object-cover" loading="lazy" />
+            <div class="p-7 flex flex-col flex-1">
+              <h3 class="text-[1.25rem] font-semibold mb-2">Full Planning &amp; Day-of Coordination</h3>
+              <p class="text-sage font-semibold mb-3">From $7,000 incl. GST + travel</p>
+              <p class="text-muted leading-[1.75] text-[0.96rem] mb-4">Complete support from the very beginning through to the final moments of your wedding day. Venue research, vendor sourcing and management, full logistics, your run sheet, rehearsal, set-up and pack-down, and complete day-of management.</p>
+              <details class="mb-5 text-[0.92rem]">
+                <summary class="cursor-pointer text-sage font-semibold select-none">What&rsquo;s included</summary>
+                <ul class="mt-3 text-muted leading-[1.7] space-y-1.5 list-none pl-0">
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Venue research, recommendations and visits</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Vendor sourcing, booking and ongoing management</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">A personalised planning checklist</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Wedding day timeline and run sheet</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Ceremony rehearsal coordination</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Full set-up and pack-down management</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Complete wedding day coordination</li>
+                </ul>
+              </details>
+              <a href="#book" data-booking class="mt-auto inline-block text-center bg-sage text-white py-2.5 px-5 rounded-full font-semibold no-underline hover:bg-sage-700 transition-colors">Book a call</a>
+            </div>
+          </article>
+
+          <article class="bg-white border border-ring rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <img src="images/pa-service.jpeg" alt="Custom wedding packages and partial planning" class="w-full h-[200px] object-cover" loading="lazy" />
+            <div class="p-7 flex flex-col flex-1">
+              <h3 class="text-[1.25rem] font-semibold mb-2">Custom Packages &amp; Partial Planning</h3>
+              <p class="text-sage font-semibold mb-3">From $4,000 incl. GST + travel</p>
+              <p class="text-muted leading-[1.75] text-[0.96rem] mb-4">For couples who have started planning but want experienced guidance to refine the details and bring everything together. Built around your priorities and your planning stage, no more and no less.</p>
+              <details class="mb-5 text-[0.92rem]">
+                <summary class="cursor-pointer text-sage font-semibold select-none">What&rsquo;s included</summary>
+                <ul class="mt-3 text-muted leading-[1.7] space-y-1.5 list-none pl-0">
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Venue and vendor guidance</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Booking and contract support</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Styling and design direction</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Timeline and logistics refinement</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Problem-solving and decision support</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Ongoing guidance into the wedding day</li>
+                </ul>
+              </details>
+              <a href="#book" data-booking class="mt-auto inline-block text-center bg-sage text-white py-2.5 px-5 rounded-full font-semibold no-underline hover:bg-sage-700 transition-colors">Book a call</a>
+            </div>
+          </article>
+
+          <article class="bg-white border border-ring rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <img src="images/da-service.jpeg" alt="On-the-day wedding coordination" class="w-full h-[200px] object-cover" loading="lazy" />
+            <div class="p-7 flex flex-col flex-1">
+              <h3 class="text-[1.25rem] font-semibold mb-2">On-the-Day Coordination</h3>
+              <p class="text-sage font-semibold mb-3">From $2,200 incl. GST + travel</p>
+              <p class="text-muted leading-[1.75] text-[0.96rem] mb-4">You have planned your wedding. I step in for the final weeks to manage the details, coordinate your vendors, and quietly keep everything flowing so you and your family can be fully present.</p>
+              <details class="mb-5 text-[0.92rem]">
+                <summary class="cursor-pointer text-sage font-semibold select-none">What&rsquo;s included</summary>
+                <ul class="mt-3 text-muted leading-[1.7] space-y-1.5 list-none pl-0">
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">A dedicated wedding coordinator</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Venue visits to review vision and logistics</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Liaison with all vendors 2 to 3 weeks prior</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Ceremony rehearsal attendance</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Oversight of ceremony and reception set-up</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Up to 8 hours of wedding day coordination</li>
+                  <li class="pl-5 relative before:content-['&bull;'] before:absolute before:left-0 before:text-sage">Main point of contact on the day</li>
+                </ul>
+              </details>
+              <a href="#book" data-booking class="mt-auto inline-block text-center bg-sage text-white py-2.5 px-5 rounded-full font-semibold no-underline hover:bg-sage-700 transition-colors">Book a call</a>
+            </div>
+          </article>
+
+          <article class="bg-white border border-ring rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <img src="images/ne-service.jpeg" alt="Personal wedding planning consultation" class="w-full h-[200px] object-cover" loading="lazy" />
+            <div class="p-7 flex flex-col flex-1">
+              <h3 class="text-[1.25rem] font-semibold mb-2">Personal Consultation</h3>
+              <p class="text-sage font-semibold mb-3">$200 incl. GST (about an hour)</p>
+              <p class="text-muted leading-[1.75] text-[0.96rem] mb-4">A relaxed one-on-one session to explore your vision, ask questions, and gain clarity on what&rsquo;s possible. You&rsquo;ll leave with guidance and direction, whether you&rsquo;re just beginning or already partway through.</p>
+              <p class="text-muted text-[0.9rem] italic mb-5">If you go on to book a planning package, this fee comes off your final investment.</p>
+              <a href="#book" data-booking class="mt-auto inline-block text-center bg-sage text-white py-2.5 px-5 rounded-full font-semibold no-underline hover:bg-sage-700 transition-colors">Book a call</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="text-center mt-8">
+          <a href="services.html" class="text-sage font-semibold no-underline hover:text-sage-700">See full service details &rarr;</a>
+        </p>
+      </div>
     </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="stories" class="scroll-mt-[170px] bg-white border-y border-ring">
+      <div class="max-w-[1100px] mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Love &amp; thanks</h2>
+          <p class="text-muted text-[1.02rem]">Real stories from real couples</p>
+        </div>
+
+        <figure class="max-w-[950px] mx-auto mb-10 bg-cream border border-ring rounded-2xl p-8">
+          <div class="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-7 items-center">
+            <img src="images/testimonial1.jpg" alt="Rebekah and Samuel on their wedding day" class="w-full h-auto object-cover rounded-xl border border-ring" width="1000" height="1499" loading="lazy" />
+            <div>
+              <blockquote class="m-0 text-[1rem] leading-[1.85] text-muted mb-5">&ldquo;We had the most beautiful wedding, thanks to Alex. From the very beginning, she made the journey so effortless for us, especially as we only gave ourselves four months to pull it all together! No request was deemed impossible, and every little detail was considered a top priority to her. I wish we could relive it all over again! Thank you so much, Alex; you&rsquo;re an absolute dream! xx&rdquo;</blockquote>
+              <figcaption class="border-t border-ring pt-4 font-semibold text-ink text-[1.05rem]">Rebekah &amp; Samuel</figcaption>
+            </div>
+          </div>
+        </figure>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <figure class="bg-cream border border-ring rounded-2xl p-6 m-0">
+            <img src="images/al-testimonial.jpeg" alt="Alessia and Alex&rsquo;s wedding" class="w-full h-[170px] object-cover rounded-xl border border-ring mb-4" loading="lazy" />
+            <blockquote class="text-[0.95rem] leading-[1.75] text-muted mb-4 m-0">&ldquo;Alex was incredible from the very start. On the day itself, the venue looked immaculate and we didn&rsquo;t have to worry about a thing. Her calm confidence, humour, and creativity brought everything together beautifully.&rdquo;</blockquote>
+            <figcaption class="border-t border-ring pt-3 font-semibold text-ink">Alessia &amp; Alex</figcaption>
+          </figure>
+
+          <figure class="bg-cream border border-ring rounded-2xl p-6 m-0">
+            <img src="images/ka-testimonial.jpeg" alt="Ben and Aivery&rsquo;s wedding" class="w-full h-[170px] object-cover rounded-xl border border-ring mb-4" loading="lazy" />
+            <blockquote class="text-[0.95rem] leading-[1.75] text-muted mb-4 m-0">&ldquo;I was sitting in the bridal car feeling nervous and unsure, but Alex came straight over and instantly calmed me down. In that moment, I realised what a truly brilliant coordinator and planner she is.&rdquo;</blockquote>
+            <figcaption class="border-t border-ring pt-3 font-semibold text-ink">Ben &amp; Aivery</figcaption>
+          </figure>
+
+          <figure class="bg-cream border border-ring rounded-2xl p-6 m-0">
+            <img src="images/el-testimonial.jpeg" alt="Kathryn and Andrew&rsquo;s wedding" class="w-full h-[170px] object-cover rounded-xl border border-ring mb-4" loading="lazy" />
+            <blockquote class="text-[0.95rem] leading-[1.75] text-muted mb-4 m-0">&ldquo;She is so knowledgeable and covered every possible detail with us early on, so when it came to the wedding day, we all felt at ease knowing everything was safely in her team&rsquo;s hands. It was the best day of our lives!&rdquo;</blockquote>
+            <figcaption class="border-t border-ring pt-3 font-semibold text-ink">Kathryn &amp; Andrew</figcaption>
+          </figure>
+        </div>
+
+        <p class="text-center mt-8">
+          <a href="love-thanks.html" class="text-sage font-semibold no-underline hover:text-sage-700">Read all the stories &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section id="book" class="scroll-mt-[170px]">
+      <div class="max-w-[900px] mx-auto px-6 py-16 text-center">
+        <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-3">Book a free intro call</h2>
+        <div id="booking-live" style="display:none">
+          <p class="text-muted text-[1.02rem] leading-[1.8] max-w-[650px] mx-auto mb-8">Pick a time that suits you for a relaxed 20 minute chat. No obligation, no pressure, just a conversation about your day and how I can help.</p>
+          <a href="#" data-booking-primary target="_blank" rel="noopener"
+             class="inline-block bg-sage text-white no-underline py-4 px-8 rounded-full font-semibold text-[1.05rem] hover:bg-sage-700 transition-colors shadow-sm">
+            Choose a time in my calendar
+          </a>
+          <p class="text-muted text-[0.9rem] mt-4">Opens my live availability. You&rsquo;ll get a confirmation email straight away.</p>
+        </div>
+
+        <div id="booking-fallback" style="display:block" class="bg-white border border-ring rounded-2xl p-8">
+          <p class="inline-block bg-cream border border-sage text-sage font-semibold text-[0.85rem] tracking-[0.15em] uppercase py-2 px-5 rounded-full mb-5">Online booking coming soon</p>
+          <p class="text-muted leading-[1.8] max-w-[520px] mx-auto mb-7">I&rsquo;m setting up online booking so you can pick a time straight from my calendar. Until it&rsquo;s live, send me a note or give me a call and we&rsquo;ll find a time that works.</p>
+          <div class="flex gap-3 justify-center flex-wrap">
+            <a href="#contact" class="inline-block bg-sage text-white no-underline py-3 px-6 rounded-full font-semibold hover:bg-sage-700 transition-colors">Send an enquiry</a>
+            <a href="tel:+64275278869" class="inline-block bg-transparent text-ink border-2 border-sage no-underline py-3 px-6 rounded-full font-semibold hover:bg-sage hover:text-white transition-colors">Call +64 27 527 8869</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="scroll-mt-[170px] bg-white border-t border-ring">
+      <div class="max-w-[1100px] mx-auto px-6 py-16">
+        <div class="grid gap-10 lg:grid-cols-2 items-start">
+
+          <div>
+            <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-semibold mb-5">Let&rsquo;s start planning something unforgettable.</h2>
+            <p class="text-muted leading-[1.8] mb-5">Every great celebration begins with a conversation, and I&rsquo;d love to hear about yours. Whether you&rsquo;re newly engaged, knee-deep in ideas, or just starting to dream, I&rsquo;m here to help bring it all to life.</p>
+            <p class="text-muted leading-[1.8] mb-8">I respond to every enquiry personally, usually within 24 hours.</p>
+
+            <div class="space-y-4 pt-6 border-t border-ring">
+              <div class="flex items-start gap-3">
+                <span class="text-xl mt-0.5" aria-hidden="true">&#128205;</span>
+                <p class="text-muted leading-relaxed">Based in Matakana, planning weddings across Auckland and New Zealand</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-xl mt-0.5" aria-hidden="true">&#128222;</span>
+                <div>
+                  <p class="text-muted mb-1">Alexandra Tofield</p>
+                  <a href="tel:+64275278869" class="text-ink font-medium no-underline hover:text-sage transition-colors">+64 27 527 8869</a>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-xl mt-0.5" aria-hidden="true">&#128231;</span>
+                <a href="mailto:alexidoweddings@gmail.com" class="text-ink font-medium no-underline hover:text-sage transition-colors break-all">alexidoweddings@gmail.com</a>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-xl mt-0.5" aria-hidden="true">&#128141;</span>
+                <a href="https://www.instagram.com/idoweddings_matakana" target="_blank" rel="noopener" class="text-ink font-medium no-underline hover:text-sage transition-colors">@idoweddings_matakana</a>
+              </div>
+            </div>
+          </div>
+
+          <form id="enquiry-form" class="bg-cream border border-ring rounded-3xl p-8 shadow-sm" novalidate>
+            <h3 class="text-[1.3rem] font-semibold mb-5">Tell me about your day</h3>
+
+            <label class="block mb-4">
+              <span class="block text-[0.9rem] font-medium text-ink mb-1.5">Your name</span>
+              <input type="text" name="name" required
+                     class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30" />
+            </label>
+
+            <label class="block mb-4">
+              <span class="block text-[0.9rem] font-medium text-ink mb-1.5">Email</span>
+              <input type="email" name="email" required
+                     class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30" />
+            </label>
+
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <label class="block">
+                <span class="block text-[0.9rem] font-medium text-ink mb-1.5">Phone <span class="text-muted font-normal">(optional)</span></span>
+                <input type="tel" name="phone"
+                       class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30" />
+              </label>
+              <label class="block">
+                <span class="block text-[0.9rem] font-medium text-ink mb-1.5">Wedding date <span class="text-muted font-normal">(or roughly)</span></span>
+                <input type="text" name="date" placeholder="e.g. March 2027"
+                       class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30" />
+              </label>
+            </div>
+
+            <label class="block mb-4">
+              <span class="block text-[0.9rem] font-medium text-ink mb-1.5">What are you after?</span>
+              <select name="service"
+                      class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30">
+                <option>Not sure yet</option>
+                <option>Full Planning &amp; Day-of Coordination</option>
+                <option>Custom Package / Partial Planning</option>
+                <option>On-the-Day Coordination</option>
+                <option>Personal Consultation</option>
+              </select>
+            </label>
+
+            <label class="block mb-6">
+              <span class="block text-[0.9rem] font-medium text-ink mb-1.5">Tell me a little about your plans</span>
+              <textarea name="message" rows="4"
+                        class="w-full rounded-xl border border-ring bg-white px-4 py-3 text-ink outline-none focus:border-sage focus:ring-2 focus:ring-sage/30"></textarea>
+            </label>
+
+            <button type="submit"
+                    class="w-full bg-sage text-white border-none py-3.5 px-6 rounded-full font-semibold cursor-pointer hover:bg-sage-700 transition-colors">
+              Send enquiry
+            </button>
+            <p id="form-note" class="text-muted text-[0.85rem] text-center mt-4">This opens your email app with the message ready to send.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="mt-7 py-5.5 px-5 border-t border-ring text-center text-muted">
-    <div>© I Do - Weddings & Events • designed & curated by Alex</div>
+  <footer class="py-10 px-5 border-t border-ring text-center text-muted bg-cream">
+    <nav aria-label="Footer" class="flex gap-5 flex-wrap justify-center mb-5 text-[0.92rem]">
+      <a href="alex.html" class="text-muted no-underline hover:text-sage">About Alex</a>
+      <a href="services.html" class="text-muted no-underline hover:text-sage">Services</a>
+      <a href="love-thanks.html" class="text-muted no-underline hover:text-sage">Love &amp; Thanks</a>
+      <a href="contact-split.html" class="text-muted no-underline hover:text-sage">Contact</a>
+      <a href="https://www.instagram.com/idoweddings_matakana" target="_blank" rel="noopener" class="text-muted no-underline hover:text-sage">Instagram</a>
+    </nav>
+    <p class="text-[0.9rem] mb-2">
+      <a href="mailto:alexidoweddings@gmail.com" class="text-muted no-underline hover:text-sage">alexidoweddings@gmail.com</a>
+      <span class="mx-2 text-ring">|</span>
+      <a href="tel:+64275278869" class="text-muted no-underline hover:text-sage">+64 27 527 8869</a>
+    </p>
+    <p class="text-[0.85rem]">Wedding planning in Matakana, Warkworth, Auckland and throughout New Zealand.</p>
+    <p class="text-[0.85rem] mt-3">&copy; <span id="year">2026</span> I Do Weddings &amp; Events &middot; Alexandra Tofield</p>
   </footer>
 
   <script>
-    const track = document.getElementById('track');
-    const dots = Array.from(document.getElementById('dots').children);
-    let index = 0;
-    function go(i){
-      index = (i + 4) % 4;
-      track.style.transform = `translateX(-${index*100}%)`;
-      dots.forEach((d,di)=>d.classList.toggle('active', di===index));
-      if (di===index) {
-        d.classList.remove('bg-white/70');
-        d.classList.add('bg-sage');
-      } else {
-        d.classList.add('bg-white/70');
-        d.classList.remove('bg-sage');
-      }
+  (function () {
+    var CFG = window.IDO_CONFIG || {};
+
+    /* ---------- hero carousel ---------- */
+    var track = document.getElementById('track');
+    var dots = Array.prototype.slice.call(document.getElementById('dots').children);
+    var count = dots.length;
+    var index = 0;
+    var timer;
+
+    function go(i) {
+      index = (i + count) % count;
+      track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      dots.forEach(function (d, di) {
+        if (di === index) {
+          d.classList.remove('bg-white/70');
+          d.classList.add('bg-sage');
+        } else {
+          d.classList.add('bg-white/70');
+          d.classList.remove('bg-sage');
+        }
+      });
     }
-    setInterval(()=>go(index+1), 4000);
+
+    function start() { timer = setInterval(function () { go(index + 1); }, 5000); }
+    function restart() { clearInterval(timer); start(); }
+
+    dots.forEach(function (d, di) {
+      d.addEventListener('click', function () { go(di); restart(); });
+    });
+
+    go(0);
+    start();
+
+    /* ---------- booking link ---------- */
+    var bookingUrl = (CFG.BOOKING_URL || '').trim();
+    if (bookingUrl) {
+      document.querySelectorAll('[data-booking]').forEach(function (a) {
+        a.setAttribute('href', bookingUrl);
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      });
+      var primary = document.querySelector('[data-booking-primary]');
+      if (primary) primary.setAttribute('href', bookingUrl);
+      document.getElementById('booking-live').style.display = 'block';
+      document.getElementById('booking-fallback').style.display = 'none';
+    }
+
+    /* ---------- enquiry form ---------- */
+    var form = document.getElementById('enquiry-form');
+    var endpoint = (CFG.FORM_ENDPOINT || '').trim();
+    var email = CFG.EMAIL || 'alexidoweddings@gmail.com';
+
+    if (endpoint) {
+      form.setAttribute('action', endpoint);
+      form.setAttribute('method', 'POST');
+      document.getElementById('form-note').textContent = 'I usually reply within 24 hours.';
+    } else {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.name.value.trim() || !form.email.value.trim()) {
+          alert('Please add your name and email so Alex can get back to you.');
+          return;
+        }
+        var body = [
+          'Name: ' + form.name.value,
+          'Email: ' + form.email.value,
+          'Phone: ' + (form.phone.value || '-'),
+          'Wedding date: ' + (form.date.value || '-'),
+          'Service: ' + form.service.value,
+          '',
+          form.message.value
+        ].join('\n');
+        window.location.href = 'mailto:' + email +
+          '?subject=' + encodeURIComponent('Wedding enquiry from ' + form.name.value) +
+          '&body=' + encodeURIComponent(body);
+      });
+    }
+
+    /* ---------- misc ---------- */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
   </script>
 </body>
 </html>
